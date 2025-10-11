@@ -1,0 +1,26 @@
+.card-container {
+  padding: 8px 13px;
+  margin-top: 16px;
+  border-radius: 8px;
+  width: auto;
+  min-width: auto;
+  background-color: var(--bv-secondary, #ffffff);
+  box-shadow: var(--bv-shadow, rgba(50, 50, 93, 0.15)) 0px 6px 12px -2px;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  background-color: var(--bv-secondary-light, #f1f1f1);
+}
+
+.card-title {
+  font-size: 18px;
+  color: var(--bv-text-primary, #000000);
+}
+
+.card-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--bv-text-secondary, #7d7d97);
+}

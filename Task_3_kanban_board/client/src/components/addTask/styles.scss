@@ -1,0 +1,74 @@
+.add-task-pane {
+  border-radius: 8px;
+  color: var(--bv-text-primary, #000);
+  margin: 16px;
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  position: fixed;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  font-size: 14px;
+  animation-duration: 0.25s;
+  animation-name: slidein1;
+}
+
+@keyframes slidein1 {
+  from {
+    top: 80px;
+  }
+  to {
+    top: 20px;
+  }
+}
+
+@media (min-width: 765px) {
+  .add-task-pane {
+    margin: 16px auto;
+    max-width: 500px;
+  }
+}
+
+.add-task-title {
+  padding: 0;
+  margin: 0;
+}
+.task-description {
+  color: var(--bv-text-secondary, #7d7d97);
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.add-subtask-list-pane {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  width: 100%;
+}
+
+.add-subtask-list-item {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.add-subtask-list-item + .add-subtask-list-item {
+  margin-top: 0.5em;
+}
+.add-subtask-list-item:hover {
+  cursor: pointer;
+}
+.add-subtask-list-item svg {
+  margin-left: 1em;
+}
+
+.subtask-body {
+  margin-left: 1em;
+  line-height: 1.25em;
+  font-weight: 700;
+}

@@ -1,0 +1,27 @@
+.profile-menu-wrap {
+  position: relative;
+}
+
+.profile-menu-pane {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  min-width: 160px;
+  background: var(--nav-primary, #ffffff);
+  border: 1px solid var(--nav-border, rgba(0, 0, 0, 0.1));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 4px 0;
+  z-index: 999;
+}
+
+.profile-menu-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: var(--nav-text, #000);
+  font-weight: 600;
+}
+
+.profile-menu-item:hover {
+  background: var(--nav-border, rgba(0, 0, 0, 0.1));
+}
