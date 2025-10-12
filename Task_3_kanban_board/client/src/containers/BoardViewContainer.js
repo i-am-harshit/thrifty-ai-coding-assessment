@@ -68,6 +68,10 @@ export default function BoardViewContainer() {
       console.debug("onCardDrop: received payload", payload);
     } catch (err) {}
     if (!payload || !payload.cardId) return;
+
+    // ensure cardToMove is available outside try block
+    let cardToMove = null;
+
     // optimistic UI update: move card locally first
     try {
       const fromId = payload.fromListId;
@@ -75,7 +79,6 @@ export default function BoardViewContainer() {
       const cardId = payload.cardId;
       const currentBoard = JSON.parse(JSON.stringify(activeBoard));
       if (currentBoard && currentBoard.lists) {
-        let cardToMove = null;
         // remove from source list
         currentBoard.lists = currentBoard.lists.map((list) => {
           if (list._id === fromId) {
@@ -107,15 +110,27 @@ export default function BoardViewContainer() {
     } catch (err) {
       console.debug("optimistic move failed", err);
     }
-    // optimistic: call updateCardData to set listId
+
+    // if we didn't find the card during the optimistic transform, try to find it in the current activeBoard
+    if (!cardToMove && activeBoard && activeBoard.lists) {
+      for (const list of activeBoard.lists) {
+        const found = list.cards.find((c) => c._id === payload.cardId);
+        if (found) {
+          cardToMove = found;
+          break;
+        }
+      }
+    }
+
+    // optimistic: call updateCardData to set listId (send actual card fields so server validation passes)
     dispatch(
       updateCardData({
         _id: payload.cardId,
         listId: payload.toListId,
         boardId: activeBoard._id,
-        title: "",
-        description: "",
-        checkList: [],
+        title: cardToMove ? cardToMove.title : "",
+        description: cardToMove ? cardToMove.description : "",
+        checkList: cardToMove ? cardToMove.checkList : [],
       })
     );
   };
