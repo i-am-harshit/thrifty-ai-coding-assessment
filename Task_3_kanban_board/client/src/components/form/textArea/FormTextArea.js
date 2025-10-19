@@ -1,4 +1,3 @@
-import React from "react";
 import { TextAreaWrapper, TextAreaLabel, InputError, TextArea } from "./styles";
 
 export default function FormTextArea(props) {

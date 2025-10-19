@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactComponent as LayoutIconLight } from "../../assets/icons/layout-light.svg";
 import { ReactComponent as LayoutIconDark } from "../../assets/icons/layout-dark.svg";
 import Wrapper from "../common/Wrapper/Wrapper";

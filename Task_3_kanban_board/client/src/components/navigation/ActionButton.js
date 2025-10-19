@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, ImageIcon } from "./styles";
 export default function ActionButton(props) {
   const { title, handler, icon } = props;

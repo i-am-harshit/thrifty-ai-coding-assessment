@@ -1,4 +1,3 @@
-import React from "react";
 import { AddSubTaskListPane, AddSubTaskListItem } from "./styles";
 import FormInput from "../form/input/FormInput";
 import { ReactComponent as CloseIconLight } from "../../assets/icons/close-light.svg";

@@ -1,4 +1,3 @@
-import React from "react";
 import { ThemeSwitchPane } from "./styles";
 
 export default function ThemeSwitch({ onThemeChange }) {

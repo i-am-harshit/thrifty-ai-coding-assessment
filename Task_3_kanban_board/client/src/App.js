@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import HomePage from "./pages/HomePage";
 import MyBoardsPage from "./pages/MyBoardsPage";
 import Wrapper from "./components/common/Wrapper/Wrapper";

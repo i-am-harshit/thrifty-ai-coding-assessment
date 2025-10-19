@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from "axios";
 import { Routes } from "../constants/constants";
 import { getTokenFromStorage } from "../helpers/auth-helpers";
