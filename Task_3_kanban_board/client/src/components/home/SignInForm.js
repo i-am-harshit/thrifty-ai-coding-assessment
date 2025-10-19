@@ -10,7 +10,7 @@ export default function SignInForm({ onSignin }) {
   const [passwordHasError, setPasswordHasError] = useState(false);
 
   const emailChangeHandler = (e) => {
-    const emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    const emailPattern = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     if (!emailPattern.test(e.target.value)) setEmailHasError(true);
     else setEmailHasError(false);
     setEmailValue(e.target.value);
@@ -33,12 +33,12 @@ export default function SignInForm({ onSignin }) {
     }
   };
 
-  const resetForm = () => {
-    setEmailValue("");
-    setPasswordValue("");
-    setEmailHasError(false);
-    setPasswordHasError(false);
-  };
+  // const resetForm = () => {
+  //   setEmailValue("");
+  //   setPasswordValue("");
+  //   setEmailHasError(false);
+  //   setPasswordHasError(false);
+  // };
 
   return (
     <Wrapper direction="column" width="100%">

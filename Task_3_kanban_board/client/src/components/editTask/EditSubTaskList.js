@@ -1,9 +1,4 @@
-import { useState } from "react";
-import {
-  EditSubTaskListPane,
-  EditSubTaskListItem,
-  SubTaskBody,
-} from "./styles";
+import { EditSubTaskListPane, EditSubTaskListItem } from "./styles";
 import FormInput from "../form/input/FormInput";
 import { ReactComponent as CloseIconLight } from "../../assets/icons/close-light.svg";
 import { ReactComponent as CloseIconDark } from "../../assets/icons/close-dark.svg";
