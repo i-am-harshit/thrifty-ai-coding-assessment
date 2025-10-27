@@ -1,5 +1,3 @@
-import React from "react";
-
 import { EditTaskPane } from "./styles";
 
 export default function AddTask({ children }) {

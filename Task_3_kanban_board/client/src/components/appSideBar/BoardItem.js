@@ -1,4 +1,3 @@
-import React from "react";
 import { BoardListItem, BoardListItemName } from "./styles";
 import { ReactComponent as IconLight } from "../../assets/icons/layout-light.svg";
 import { ReactComponent as IconDark } from "../../assets/icons/layout-dark.svg";

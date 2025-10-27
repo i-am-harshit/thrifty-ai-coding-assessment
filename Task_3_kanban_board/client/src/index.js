@@ -1,5 +1,5 @@
 import { Global, ThemeProvider } from "@emotion/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import App from "./App";

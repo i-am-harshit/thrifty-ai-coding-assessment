@@ -1,4 +1,3 @@
-import React from "react";
 import { InputWrapper, InputLabel, InputError, Input } from "./styles";
 
 export default function FormInput(props) {

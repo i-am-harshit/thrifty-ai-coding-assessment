@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MoreOptionsPane, OptionsList, OptionItem } from "./styles";
 import { ReactComponent as MoreIcon } from "../../../assets/icons/more-light.svg";
 import useClickOutside from "../../../hooks/useClickOutside";

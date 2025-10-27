@@ -65,10 +65,6 @@ Get analytics for a short URL.
 }
 ```
 
-### GET /health
-
-Health check endpoint.
-
 ## Quick Start
 
 ### Prerequisites
@@ -219,9 +215,6 @@ curl -I http://localhost:3000/Ab12cDef
 
 # Get statistics
 curl http://localhost:3000/stats/Ab12cDef
-
-# Health check
-curl http://localhost:3000/health
 ```
 
 ### Using Postman

@@ -1,4 +1,3 @@
-import React from "react";
 import "./avatar.scss";
 
 function initialsFrom(name, fallback) {

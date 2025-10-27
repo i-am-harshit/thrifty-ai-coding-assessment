@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SwitchPane, SwitchCircle } from "./styles";
 
 export default function Switch({ initialState, onClick }) {

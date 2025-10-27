@@ -1,4 +1,3 @@
-import React from "react";
 import Checkbox from "../form/checkbox/Checkbox";
 import { SubTaskListPane, SubTaskListItem, SubTaskBody } from "./styles";
 

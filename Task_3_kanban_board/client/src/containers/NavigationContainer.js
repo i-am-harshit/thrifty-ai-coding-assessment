@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Wrapper from "../components/common/Wrapper/Wrapper";
 import { ReactComponent as Logo } from "../assets/icons/logo.svg";
 // removed global add icon/button; Add Task is now per-column

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Wrapper from "../components/common/Wrapper/Wrapper";
 import DropDown from "../components/form/dropDown/DropDown";
